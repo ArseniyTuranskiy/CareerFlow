@@ -23,6 +23,13 @@ so every feature can be understood before the next one is added.
 
 Landing-page header with the CareerFlow wordmark, navigation, and account actions.
 
+### Current implementation
+
+The screenshot below shows the actual Day 1 application state, not the target UI
+concept.
+
+![CareerFlow Day 1 foundation](docs/progress/day-01-foundation.png)
+
 ## Planned stack
 
 - Next.js and TypeScript
