@@ -5,7 +5,7 @@ professional goals, tasks, skills, and progress in one place.
 
 ## Project status
 
-**Current phase:** project foundation complete; landing-page UI is next.
+**Current phase:** landing-page header complete; hero section is next.
 
 The Next.js application is running with strict TypeScript settings, shared design
 tokens, and a minimal homepage. Development is split into small, reviewable blocks
@@ -17,18 +17,19 @@ so every feature can be understood before the next one is added.
 - High-fidelity landing-page concept image
 - Next.js App Router foundation with React and TypeScript
 - Global color tokens and base page styles
+- Responsive landing-page header and primary navigation
 - Type checking, production build, and zero known npm vulnerabilities
 
 ### Next block
 
-Landing-page header with the CareerFlow wordmark, navigation, and account actions.
+Landing-page hero with product messaging, calls to action, and a dashboard preview.
 
 ### Current implementation
 
-The screenshot below shows the actual Day 1 application state, not the target UI
+The screenshot below shows the actual Day 2 application state, not the target UI
 concept.
 
-![CareerFlow Day 1 foundation](docs/progress/day-01-foundation.png)
+![CareerFlow Day 2 header](docs/progress/day-02-header.png)
 
 ## Planned stack
 

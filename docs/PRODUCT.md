@@ -30,7 +30,7 @@ the interface and data model are clear.
 ## Development blocks
 
 - [x] Project foundation and design tokens.
-- [ ] Landing-page header and navigation.
+- [x] Landing-page header and navigation.
 - [ ] Landing-page hero section.
 - [ ] Landing-page feature sections and footer.
 - [ ] Application shell: sidebar and top bar.

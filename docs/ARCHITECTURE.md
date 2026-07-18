@@ -19,9 +19,9 @@ should not be placed in the root layout.
 
 ### `app/page.tsx`
 
-The homepage for the `/` route. It currently contains a small foundation message.
-The landing-page sections will be composed here as separate components after they
-are implemented.
+The homepage for the `/` route. It currently composes the shared site header and a
+temporary hero message. New landing-page sections will be added here as separate
+components after they are implemented.
 
 ### `app/globals.css`
 
@@ -35,6 +35,20 @@ Global styles shared by the whole application. It currently contains:
 
 Reusable component styles will stay close to their components once the component
 structure is introduced.
+
+## Shared components
+
+### `components/site-header/site-header.tsx`
+
+The landing-page header component. It owns the CareerFlow wordmark, primary
+navigation data, login action, and start action. Navigation items are rendered
+from an array so labels and targets can be maintained in one place.
+
+### `components/site-header/site-header.module.css`
+
+Styles that belong only to the header. The module defines the desktop grid,
+interactive hover and keyboard-focus states, primary action styling, and the
+smaller mobile layout. CSS Modules keep these class names local to the component.
 
 ## Configuration files
 
@@ -59,7 +73,7 @@ should not be edited manually.
 
 Configures TypeScript. Strict mode is enabled so unsafe values and incorrect prop
 types are caught before runtime. Next.js also uses this file to generate route and
-build types.
+build types. The `@/*` alias provides clear imports from the project root.
 
 ### `.gitignore`
 
