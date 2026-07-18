@@ -18,6 +18,7 @@ so every feature can be understood before the next one is added.
 - Next.js App Router foundation with React and TypeScript
 - Global color tokens and base page styles
 - Responsive landing-page header and primary navigation
+- Accessible mobile burger menu with keyboard support
 - Type checking, production build, and zero known npm vulnerabilities
 
 ### Next block
@@ -30,6 +31,10 @@ The screenshot below shows the actual Day 2 application state, not the target UI
 concept.
 
 ![CareerFlow Day 2 header](docs/progress/day-02-header.png)
+
+Mobile navigation:
+
+![CareerFlow Day 2 mobile menu](docs/progress/day-02-mobile-menu.png)
 
 ## Planned stack
 

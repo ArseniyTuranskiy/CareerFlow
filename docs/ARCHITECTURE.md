@@ -42,13 +42,18 @@ structure is introduced.
 
 The landing-page header component. It owns the CareerFlow wordmark, primary
 navigation data, login action, and start action. Navigation items are rendered
-from an array so labels and targets can be maintained in one place.
+from an array so labels and targets can be maintained in one place. On smaller
+screens it also owns the mobile-menu state. The menu can be closed by selecting a
+link, pressing the toggle again, or pressing `Escape`; ARIA attributes expose its
+state to assistive technology.
 
 ### `components/site-header/site-header.module.css`
 
 Styles that belong only to the header. The module defines the desktop grid,
 interactive hover and keyboard-focus states, primary action styling, and the
-smaller mobile layout. CSS Modules keep these class names local to the component.
+smaller mobile layout. Below 48rem the desktop actions are replaced by a burger
+button and an expandable navigation panel. CSS Modules keep these class names
+local to the component.
 
 ## Configuration files
 
