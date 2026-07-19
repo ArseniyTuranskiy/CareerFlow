@@ -38,6 +38,19 @@ structure is introduced.
 
 ## Shared components
 
+### `components/hero-section/hero-section.tsx`
+
+The landing-page hero content. It defines the product eyebrow, semantic heading,
+supporting message, primary action, and secondary demo action. The two heading
+spans create an intentional desktop line break while still allowing natural wraps
+on narrow screens.
+
+### `components/hero-section/hero-section.module.css`
+
+Local styles for hero spacing, responsive typography, CTA states, and mobile
+stacking. The buttons share their structural rules while keeping separate visual
+roles for the primary and secondary actions.
+
 ### `components/site-header/site-header.tsx`
 
 The landing-page header component. It owns the CareerFlow wordmark, primary
@@ -108,6 +121,10 @@ behavior take priority during implementation.
 Contains screenshots of the application as it actually existed at the end of a
 development block. These images are implementation evidence and must not be
 confused with the target designs stored in `docs/mockups/`.
+
+### `docs/WORKFLOW.md`
+
+Defines the feature-branch naming and review process used to keep `main` stable.
 
 ## Generated directories
 
