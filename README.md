@@ -5,7 +5,7 @@ professional goals, tasks, skills, and progress in one place.
 
 ## Project status
 
-**Current phase:** hero content complete; dashboard preview is next.
+**Current phase:** complete hero section; landing-page features are next.
 
 The Next.js application is running with strict TypeScript settings, shared design
 tokens, and a minimal homepage. Development is split into small, reviewable blocks
@@ -20,18 +20,19 @@ so every feature can be understood before the next one is added.
 - Responsive landing-page header and primary navigation
 - Accessible mobile burger menu with keyboard support
 - Responsive hero messaging and call-to-action controls
+- Responsive dashboard preview with progress and weekly-focus data
 - Type checking, production build, and zero known npm vulnerabilities
 
 ### Next block
 
-Hero dashboard preview that visualizes weekly career progress.
+Landing-page feature cards that explain the core CareerFlow workflows.
 
 ### Current implementation
 
-The screenshot below shows the actual Day 3 application state, not the target UI
+The screenshot below shows the actual Day 4 application state, not the target UI
 concept.
 
-![CareerFlow Day 3 hero](docs/progress/day-03-hero.png)
+![CareerFlow Day 4 dashboard preview](docs/progress/day-04-dashboard-preview.png)
 
 ## Planned stack
 

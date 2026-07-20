@@ -1,0 +1,231 @@
+.frame {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 16%);
+  border-radius: 1rem;
+  background: var(--color-surface);
+  box-shadow: 0 2rem 5rem rgb(0 8 24 / 35%);
+  color: #0a1930;
+}
+
+.rail {
+  display: flex;
+  align-items: center;
+  padding-block: 1.25rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--color-navy-900);
+}
+
+.railMark,
+.railItem {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+}
+
+.railMark {
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  background: var(--color-accent);
+  font-weight: 800;
+}
+
+.railItem {
+  color: #b8c5d6;
+  font-size: 1.125rem;
+}
+
+.railItemActive {
+  color: #1357d7;
+  background: #ffffff;
+}
+
+.dashboard {
+  min-width: 0;
+  padding: clamp(1rem, 2.5vw, 1.75rem);
+  background: #f7f9fc;
+}
+
+.dashboardHeader,
+.focusHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.kicker {
+  margin: 0 0 0.25rem;
+  color: #718096;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin: 0;
+  font-size: clamp(1.25rem, 2vw, 1.625rem);
+  letter-spacing: -0.035em;
+}
+
+.period {
+  color: #536176;
+  font-size: 0.75rem;
+  font-weight: 650;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.card,
+.focusCard {
+  border: 1px solid #dfe5ed;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.card {
+  min-width: 0;
+  padding: 1rem;
+}
+
+.progressCard {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.progressRing {
+  display: grid;
+  width: 3.75rem;
+  height: 3.75rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: conic-gradient(var(--color-accent) 72%, #e6ebf1 0);
+}
+
+.progressRing::before {
+  grid-area: 1 / 1;
+  width: 2.875rem;
+  height: 2.875rem;
+  border-radius: 50%;
+  background: #ffffff;
+  content: "";
+}
+
+.progressRing span {
+  z-index: 1;
+  grid-area: 1 / 1;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.cardLabel {
+  margin: 0;
+  color: #536176;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.positive,
+.metricDetail {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.6875rem;
+}
+
+.positive,
+.metricDetail {
+  color: #0e9f5b;
+}
+
+.metricValue {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.focusCard {
+  margin-top: 0.75rem;
+  padding: 1rem;
+}
+
+.focusHeader h3 {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.focusHeader span {
+  color: #718096;
+  font-size: 0.6875rem;
+}
+
+.focusList {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.focusItem {
+  display: flex;
+  align-items: center;
+  padding-block: 0.625rem;
+  gap: 0.625rem;
+  border-top: 1px solid #edf0f4;
+  color: #344156;
+  font-size: 0.75rem;
+}
+
+.check {
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c8d0dc;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  font-size: 0.625rem;
+}
+
+.checkComplete {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+}
+
+@media (max-width: 38rem) {
+  .frame {
+    grid-template-columns: 3.25rem 1fr;
+  }
+
+  .railItem {
+    display: none;
+  }
+
+  .railMark {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .progressCard {
+    grid-column: 1 / -1;
+  }
+}

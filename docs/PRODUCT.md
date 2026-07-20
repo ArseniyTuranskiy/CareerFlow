@@ -32,7 +32,7 @@ the interface and data model are clear.
 - [x] Project foundation and design tokens.
 - [x] Landing-page header and navigation.
 - [x] Landing-page hero messaging and actions.
-- [ ] Hero dashboard preview.
+- [x] Hero dashboard preview.
 - [ ] Landing-page feature sections and footer.
 - [ ] Application shell: sidebar and top bar.
 - [ ] Dashboard summary cards.

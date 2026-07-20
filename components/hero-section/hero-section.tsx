@@ -1,3 +1,5 @@
+import { DashboardPreview } from "@/components/dashboard-preview/dashboard-preview";
+
 import styles from "./hero-section.module.css";
 
 export function HeroSection() {
@@ -26,6 +28,8 @@ export function HeroSection() {
           </a>
         </div>
       </div>
+
+      <DashboardPreview />
     </section>
   );
 }
