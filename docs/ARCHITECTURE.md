@@ -38,18 +38,29 @@ structure is introduced.
 
 ## Shared components
 
+### `components/dashboard-preview/dashboard-preview.tsx`
+
+A static visual preview of the future authenticated workspace. It contains a
+navigation rail, weekly progress ring, application and goal metrics, and a focused
+task list. The data is intentionally local and read-only until the dashboard data
+model is implemented in a separate feature.
+
+### `components/dashboard-preview/dashboard-preview.module.css`
+
+Local presentation rules for the white dashboard surface, metric grid, CSS conic
+progress ring, task rows, and responsive mobile layout. At smaller widths the rail
+is simplified and the progress metric spans both columns.
+
 ### `components/hero-section/hero-section.tsx`
 
-The landing-page hero content. It defines the product eyebrow, semantic heading,
-supporting message, primary action, and secondary demo action. The two heading
-spans create an intentional desktop line break while still allowing natural wraps
-on narrow screens.
+The landing-page hero composition. It combines the product message and actions
+with `DashboardPreview`. The two heading spans create an intentional desktop line
+break while still allowing natural wraps on narrow screens.
 
 ### `components/hero-section/hero-section.module.css`
 
-Local styles for hero spacing, responsive typography, CTA states, and mobile
-stacking. The buttons share their structural rules while keeping separate visual
-roles for the primary and secondary actions.
+Local styles for the two-column hero grid, responsive typography, CTA states, and
+mobile stacking. Below 68rem the dashboard preview moves under the hero content.
 
 ### `components/site-header/site-header.tsx`
 
