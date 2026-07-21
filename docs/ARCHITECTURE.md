@@ -38,6 +38,17 @@ structure is introduced.
 
 ## Shared components
 
+### `components/features-section/features-section.tsx`
+
+The landing-page overview of the four core CareerFlow workflows. Feature content
+is stored in one array and mapped into semantic article cards, keeping repeated
+markup consistent and making future content changes small.
+
+### `components/features-section/features-section.module.css`
+
+Local styles for the section heading, white feature surfaces, icon treatments,
+hover feedback, and the responsive `4 → 2 → 1` column grid.
+
 ### `components/dashboard-preview/dashboard-preview.tsx`
 
 A static visual preview of the future authenticated workspace. It contains a
