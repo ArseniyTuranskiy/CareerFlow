@@ -1,0 +1,122 @@
+.section {
+  border-top: 1px solid rgb(255 255 255 / 8%);
+  padding-block: clamp(5rem, 9vw, 7.5rem);
+  background: var(--color-navy-900);
+}
+
+.container {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+}
+
+.headingGroup {
+  max-width: 45rem;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: var(--color-accent);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin: 0;
+  font-size: clamp(2.25rem, 4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  text-wrap: balance;
+}
+
+.intro {
+  max-width: 38rem;
+  margin: 1.5rem 0 0;
+  color: var(--color-text-muted);
+  font-size: clamp(1rem, 1.5vw, 1.1875rem);
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.card {
+  min-height: 18rem;
+  padding: clamp(1.5rem, 2.5vw, 2rem);
+  border: 1px solid #dfe5ed;
+  border-radius: 1rem;
+  background: var(--color-surface);
+  box-shadow: 0 1.25rem 3rem rgb(0 8 24 / 16%);
+  color: #0a1930;
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.card:hover {
+  border-color: rgb(22 185 107 / 55%);
+  transform: translateY(-0.25rem);
+}
+
+.icon {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  color: #087945;
+  background: #dcf8e9;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.card:nth-child(even) .icon {
+  color: #1357d7;
+  background: #e7efff;
+}
+
+.card h3 {
+  margin: 2rem 0 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.card p {
+  margin: 0.875rem 0 0;
+  color: #536176;
+  line-height: 1.65;
+}
+
+@media (max-width: 64rem) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card {
+    min-height: 15rem;
+  }
+}
+
+@media (max-width: 38rem) {
+  .section {
+    padding-block: 4.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 0;
+  }
+
+  .card h3 {
+    margin-top: 1.5rem;
+  }
+}

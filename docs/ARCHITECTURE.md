@@ -30,13 +30,24 @@ Global styles shared by the whole application. It currently contains:
 - design tokens stored as CSS custom properties;
 - the global `box-sizing` rule;
 - body background, text, and font defaults;
-- the main content-width helper;
-- temporary styles for the foundation screen.
+- smooth section-anchor navigation;
+- a reduced-motion fallback for users who disable animation.
 
 Reusable component styles will stay close to their components once the component
 structure is introduced.
 
 ## Shared components
+
+### `components/features-section/features-section.tsx`
+
+The landing-page overview of the four core CareerFlow workflows. Feature content
+is stored in one array and mapped into semantic article cards, keeping repeated
+markup consistent and making future content changes small.
+
+### `components/features-section/features-section.module.css`
+
+Local styles for the section heading, white feature surfaces, icon treatments,
+hover feedback, and the responsive `4 → 2 → 1` column grid.
 
 ### `components/dashboard-preview/dashboard-preview.tsx`
 
