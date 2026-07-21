@@ -30,8 +30,8 @@ Global styles shared by the whole application. It currently contains:
 - design tokens stored as CSS custom properties;
 - the global `box-sizing` rule;
 - body background, text, and font defaults;
-- the main content-width helper;
-- temporary styles for the foundation screen.
+- smooth section-anchor navigation;
+- a reduced-motion fallback for users who disable animation.
 
 Reusable component styles will stay close to their components once the component
 structure is introduced.
