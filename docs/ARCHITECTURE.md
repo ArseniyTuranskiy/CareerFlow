@@ -19,9 +19,8 @@ should not be placed in the root layout.
 
 ### `app/page.tsx`
 
-The homepage for the `/` route. It currently composes the shared site header and a
-temporary hero message. New landing-page sections will be added here as separate
-components after they are implemented.
+The homepage for the `/` route. It composes the shared site header, hero, feature
+overview, and “How it works” process as separate components.
 
 ### `app/globals.css`
 
@@ -37,6 +36,17 @@ Reusable component styles will stay close to their components once the component
 structure is introduced.
 
 ## Shared components
+
+### `components/how-it-works-section/how-it-works-section.tsx`
+
+The four-step process that explains how a user moves from choosing a direction to
+reviewing measurable progress. Step content lives in one array and is rendered as
+an ordered list so its sequence remains meaningful without the visual styling.
+
+### `components/how-it-works-section/how-it-works-section.module.css`
+
+Local styles for the desktop split layout, numbered process rows, sticky heading,
+and the single-column tablet and mobile layouts.
 
 ### `components/features-section/features-section.tsx`
 
