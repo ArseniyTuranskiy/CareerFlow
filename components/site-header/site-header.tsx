@@ -8,7 +8,7 @@ import styles from "./site-header.module.css";
 const navigationItems = [
   { href: "#product", label: "Product" },
   { href: "#features", label: "Features" },
-  { href: "#roadmap", label: "Roadmap" },
+  { href: "#how-it-works", label: "How it works" },
 ];
 
 export function SiteHeader() {

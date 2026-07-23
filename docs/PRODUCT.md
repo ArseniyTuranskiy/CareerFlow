@@ -34,7 +34,7 @@ the interface and data model are clear.
 - [x] Landing-page hero messaging and actions.
 - [x] Hero dashboard preview.
 - [x] Landing-page feature cards.
-- [ ] “How it works” process section.
+- [x] “How it works” process section.
 - [ ] Landing-page final call to action and footer.
 - [ ] Application shell: sidebar and top bar.
 - [ ] Dashboard summary cards.
