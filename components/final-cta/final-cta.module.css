@@ -1,0 +1,104 @@
+.section {
+  padding: clamp(1rem, 3vw, 2rem) 1rem clamp(5rem, 9vw, 7.5rem);
+  background: var(--color-navy-950);
+}
+
+.panel {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+  padding: clamp(3rem, 7vw, 6.5rem) clamp(1.5rem, 7vw, 7rem);
+  border-radius: clamp(1.25rem, 3vw, 2rem);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 20%, rgb(255 255 255 / 18%), transparent 26rem),
+    linear-gradient(135deg, var(--color-accent-strong), var(--color-accent));
+  box-shadow: 0 2rem 5rem rgb(0 8 24 / 28%);
+  color: #ffffff;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.heading {
+  max-width: 49rem;
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+
+.description {
+  max-width: 39rem;
+  margin: 1.5rem 0 0;
+  color: rgb(255 255 255 / 86%);
+  font-size: clamp(1rem, 1.5vw, 1.1875rem);
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  margin-top: 2rem;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.5rem;
+  border-radius: 0.625rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.primaryAction {
+  color: var(--color-navy-950);
+  background: #ffffff;
+}
+
+.secondaryAction {
+  border: 1px solid rgb(255 255 255 / 55%);
+  color: #ffffff;
+  background: rgb(3 22 47 / 12%);
+}
+
+.primaryAction:hover,
+.secondaryAction:hover {
+  transform: translateY(-2px);
+}
+
+.primaryAction:hover {
+  background: #eefbf4;
+}
+
+.secondaryAction:hover {
+  background: rgb(3 22 47 / 24%);
+}
+
+.primaryAction:focus-visible,
+.secondaryAction:focus-visible {
+  outline: 3px solid var(--color-navy-950);
+  outline-offset: 4px;
+}
+
+@media (max-width: 38rem) {
+  .section {
+    padding-bottom: 4.5rem;
+  }
+
+  .actions {
+    display: grid;
+  }
+}

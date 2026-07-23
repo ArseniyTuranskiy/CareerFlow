@@ -37,6 +37,17 @@ structure is introduced.
 
 ## Shared components
 
+### `components/final-cta/final-cta.tsx`
+
+The landing page's closing call to action. Its `start` anchor completes the
+navigation path used by the header and hero buttons, while the secondary action
+returns the user to the feature overview.
+
+### `components/final-cta/final-cta.module.css`
+
+Local styles for the green CTA panel, decorative gradient, action states, and the
+stacked mobile button layout.
+
 ### `components/how-it-works-section/how-it-works-section.tsx`
 
 The four-step process that explains how a user moves from choosing a direction to
