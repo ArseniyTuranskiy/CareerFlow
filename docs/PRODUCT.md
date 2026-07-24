@@ -36,7 +36,7 @@ the interface and data model are clear.
 - [x] Landing-page feature cards.
 - [x] “How it works” process section.
 - [x] Landing-page final call to action.
-- [ ] Landing-page footer.
+- [x] Landing-page footer.
 - [ ] Application shell: sidebar and top bar.
 - [ ] Dashboard summary cards.
 - [ ] Application board with local state.
