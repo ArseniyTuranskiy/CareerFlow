@@ -5,7 +5,8 @@ professional goals, tasks, skills, and progress in one place.
 
 ## Project status
 
-**Current phase:** final landing-page CTA implemented; footer is next.
+**Current phase:** the first complete responsive landing page is implemented;
+the authenticated application shell is next.
 
 The Next.js application is running with strict TypeScript settings, shared design
 tokens, and a minimal homepage. Development is split into small, reviewable blocks
@@ -24,18 +25,19 @@ so every feature can be understood before the next one is added.
 - Responsive feature grid generated from structured product data
 - Four-step “How it works” process with responsive layout and anchor navigation
 - Responsive final CTA connected to the existing start links
+- Responsive footer with product navigation and project resources
 - Type checking, production build, and zero known npm vulnerabilities
 
 ### Next block
 
-Landing-page footer with product links and project information.
+Application shell with a reusable sidebar and top bar.
 
 ### Current implementation
 
-The screenshot below shows the actual Day 7 application state, not the target UI
+The screenshot below shows the actual Day 8 application state, not the target UI
 concept.
 
-![CareerFlow Day 7 final CTA](docs/progress/day-07-final-cta.png)
+![CareerFlow Day 8 completed landing page](docs/progress/day-08-site-footer.png)
 
 ## Planned stack
 

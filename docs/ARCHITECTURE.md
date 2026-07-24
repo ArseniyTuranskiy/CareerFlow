@@ -37,6 +37,18 @@ structure is introduced.
 
 ## Shared components
 
+### `components/site-footer/site-footer.tsx`
+
+The shared landing-page footer. Product anchors are stored in one local array,
+while external project resources use a separate array and open safely in a new
+tab. The footer also identifies the public project owner and current technology
+stack.
+
+### `components/site-footer/site-footer.module.css`
+
+Local styles for the three-column footer grid, link states, bottom metadata bar,
+and the two responsive layouts used on tablet and mobile.
+
 ### `components/final-cta/final-cta.tsx`
 
 The landing page's closing call to action. Its `start` anchor completes the
